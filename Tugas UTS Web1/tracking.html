@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style=" background-image: url('img/Pengiriman.jpeg'); background-size: cover;">
+    <div id="container">
+        <header>
+            <h1>Toko Buku</h1>
+        </header>
+            <nav>
+                <a href="dashboard.html">Home</a>
+                <a href="stok.html">Informasi Stok</a>
+                <a href="tracking.html" class="active">Tracking Pengiriman</a>
+                <a href="checkout.html">Laporan Pemesanan</a>
+                <a href="history.html">History Transaksi</a>
+                <a href="about.html">About</a>
+            </nav>
+            <main>
+                <h2 style="margin-bottom: 20px;">🔍 Tracking Pengiriman</h2>
+                <div class="tracking-input">
+                    <input type="text" id="input-nomor-do" placeholder="Masukkan Nomor Delivery Order (contoh: 20230012)">
+                    <button onclick="cariTracking()">Cari</button>
+                </div>
+
+                <div id="tracking-results">
+                    </div>
+            </main>
+        </div>
+        <script src="js/data.js"></script>
+        <script src="js/tracking.js"></script>
+    </div>
+</body>
+</html>

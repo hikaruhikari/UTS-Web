@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url('img/Pengiriman.jpeg'); background-size: cover;">
+    <div id="container">
+        <header>
+            <h1>Toko Buku</h1>
+        </header>
+            <nav>
+                <a href="dashboard.html" class="active">Home</a>
+                <a href="stok.html">Informasi Stok</a>
+                <a href="tracking.html">Tracking Pengiriman</a>
+                <a href="checkout.html">Laporan Pemesanan</a>
+                <a href="history.html">History Transaksi</a>
+                <a href="about.html">About</a>
+            </nav>
+            <section id="hero">
+                <h1 id="greeting">...</h1>
+                <p>Selamat datang di Beranda kami. Gunakan menu di atas untuk mengelola data dan informasi terkait sistem.</p>
+            </section>
+    </div>
+    <script>
+        // Mendapatkan objek Date yang berisi waktu dan tanggal lokal saat ini
+        var today = new Date();
+        
+        // Mendapatkan jam (dalam format 0-23)
+        var currentHour = today.getHours(); 
+        
+        var greetingText;
+
+        // Logika untuk menentukan sapaan
+        if (currentHour < 11) {
+            greetingText = 'Selamat Pagi! Pengguna';
+        } else if (currentHour < 15) {
+            greetingText = 'Selamat Siang! Pengguna';
+        } else if (currentHour < 18) {
+            greetingText = 'Selamat Sore! Pengguna';
+        } else {
+            greetingText = 'Selamat Malam! Pengguna';
+        }
+
+        // Menampilkan sapaan di elemen HTML dengan id="greeting"
+        document.getElementById('greeting').innerHTML = greetingText;
+    </script>
+</body>
+</html>

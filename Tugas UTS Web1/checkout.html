@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pemesanan</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body style="background-image: url('img/Pengiriman.jpeg'); background-size: cover;"> 
+    <div id="container">
+        <header>
+            <h1>Toko Buku</h1>
+        </header>
+        <nav>
+            <a href="dashboard.html">Home</a>
+            <a href="stok.html">Informasi Stok</a>
+            <a href="tracking.html">Tracking Pengiriman</a>
+            <a href="checkout.html" class="active">Laporan Pemesanan</a>
+            <a href="history.html">History Transaksi</a>
+            <a href="about.html">About</a>
+        </nav>
+        
+        <main>
+            <h2 style="margin-bottom: 20px;">📝 Laporan Pemesanan (Checkout)</h2>
+
+            <h3 style="margin-bottom: 10px;">Daftar Pesanan</h3>
+            <div id="cart-items" style="border: 1px solid #ccc; padding: 15px; border-radius: 5px; background-color: aliceblue; margin-bottom: 20px;">
+                <table id="tabel-pesanan">
+                    <thead>
+                        <tr>
+                            <th>ID Produk</th>
+                            <th>Nama Produk</th>
+                            <th>Harga Satuan</th>
+                            <th>Kuantitas</th>
+                            <th>Subtotal</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+                <p style="text-align: right; font-weight: bold; margin-top: 10px;">Total Pembayaran: <span id="total-pembayaran">Rp 0</span></p>
+                <hr>
+            </div>
+
+            <h3 style="margin-bottom: 10px;">Informasi Pemesan & Pembayaran</h3>
+            <form id="checkoutForm">
+                <fieldset>
+                    <legend>Data Pemesan</legend>
+                    <label for="nama_pemesan">Nama Lengkap:</label>
+                    <input type="text" id="nama_pemesan" required><br><br>
+                    
+                    <label for="alamat">Alamat Pengiriman:</label>
+                    <textarea id="alamat" rows="3" required></textarea><br><br>
+                    
+                    <label for="telepon">Nomor Telepon:</label>
+                    <input type="tel" id="telepon" required>
+                </fieldset>
+                
+                <br>
+                
+                <fieldset>
+                    <legend>Metode Pembayaran</legend>
+                    <label for="metode_bayar">Pilih Metode:</label>
+                    <select id="metode_bayar" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="cod">Cash on Delivery (COD)</option>
+                        <option value="e-wallet">E-Wallet</option>
+                    </select><br><br>
+                    
+                    <label for="catatan">Catatan Tambahan:</label>
+                    <input type="text" id="catatan">
+                </fieldset>
+                
+                <br>
+
+                <button type="submit" id="submitCheckout">Proses Pesanan</button>
+            </form>
+            <p id="checkout-message" style="margin-top: 15px;"></p>
+
+        </main>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/checkout.js"></script> 
+</body>
+</html>

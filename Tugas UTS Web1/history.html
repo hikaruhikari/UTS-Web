@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style=" background-image: url('img/Pengiriman.jpeg'); background-size: cover;">
+    <div id="container">
+        <header>
+            <h1>Toko Buku</h1>
+        </header>
+            <nav>
+                <a href="dashboard.html">Home</a>
+                <a href="stok.html">Informasi Stok</a>
+                <a href="tracking.html">Tracking Pengiriman</a>
+                <a href="checkout.html">Laporan Pemesanan</a>
+                <a href="history.html" class="active">History Transaksi</a>
+                <a href="about.html">About</a>
+            </nav>
+            <main>
+                <h2 style="margin-bottom: 20px;">⏳ Riwayat Pengiriman & Transaksi</h2>
+                <p style="margin-bottom: 20px;">Berikut adalah daftar lengkap transaksi dan status pengiriman yang pernah Anda lakukan.</p>
+                
+                <div id="history-list">
+                    <table id="tabel-riwayat">
+                        <thead>
+                            <tr>
+                                <th>No. Transaksi</th>
+                                <th>Tanggal</th>
+                                <th>Total Bayar</th>
+                                <th>Status Pengiriman</th>
+                                <th>Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            </tbody>
+                    </table>
+                    <p id="no-history" style="text-align: center; margin-top: 30px; display: none;">Tidak ada riwayat transaksi yang ditemukan.</p>
+                </div>
+            </main>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/history.js"></script>
+</body>
+</html>

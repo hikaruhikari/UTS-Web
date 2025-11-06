@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stok</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style=" background-image: url('img/Pengiriman.jpeg'); background-size: cover;">
+    <div id="container">
+        <header>
+            <h1>Toko Buku</h1>
+        </header>
+            <nav>
+                <a href="dashboard.html">Home</a>
+                <a href="stok.html" class="active">Informasi Stok</a>
+                <a href="tracking.html">Tracking Pengiriman</a>
+                <a href="checkout.html">Laporan Pemesanan</a>
+                <a href="history.html">History Transaksi</a>
+                <a href="about.html">About</a>
+            </nav>
+            <section id="stok-section">
+                <table border="1" cellpadding="10" cellspacing="0" style="width: 80%; margin: auto; text-align: center;">
+                    <thead>
+                        <tr>
+                            <th>kode</th>
+                            <th>Nama</th>
+                            <th>Jenis</th>
+                            <th>Edisi</th>
+                            <th>Stok</th>
+                            <th>Harga</th>
+                            <th>Cover</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stok-body">
+                        <!-- Data stok akan dimuat di sini oleh script.js -->
+                    </tbody>
+                </table>
+            </section>
+    </div>
+    <section id="input-stok" style="width: 60%; margin: 20px auto; padding: 20px; border: 1px solid #ccc; border-radius: 5px; background-color: aliceblue;">
+        <h3 style="margin-bottom: 20px;">Tambah Stok Buku Baru</h3>
+        <form id="form-tambah-stok">
+            <label for="kode">Kode:</label>
+            <input type="text" id="kode" name="kode" required><br><br>
+
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="jenis">Jenis:</label>
+            <input type="text" id="jenis" name="jenis"><br><br>
+
+            <label for="edisi">Edisi:</label>
+            <input type="number" id="edisi" name="edisi"><br><br>
+            
+            <label for="stok">Stok:</label>
+            <input type="number" id="stok" name="stok" required><br><br>
+            
+            <label for="harga">Harga (Rupiah):</label>
+            <input type="text" id="harga" name="harga" placeholder="Contoh: 180000" required><br><br>
+            
+            <button type="submit">Tambahkan ke Stok</button>
+        </form>
+    </section>
+    <script src="js/data.js"></script>
+    <script src="js/script2.js"></script>
+</body>
+</html>

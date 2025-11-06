@@ -1,0 +1,90 @@
+/* import google font */
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import
+url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+.error {
+    color: red;
+}
+fieldset {
+    text-align: center; 
+    width: 400px; 
+    height: 300px; 
+    margin: auto; 
+    margin-top: 120px; 
+    border: 1px solid black; 
+    background-color: #d8c1c1;
+}
+fieldset h2 {
+    margin: 20px 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+form {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+}
+form input[type="submit"] {
+    border: 1px solid #197a43;
+    background-color: #197a43;
+    color: #000000;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 28px;
+}
+.modal {
+    display: none; /* Sembunyikan Modal secara default */
+    position: fixed; /* Tetap di viewport saat scrolling */
+    z-index: 10; /* Pastikan di atas elemen lain */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Aktifkan scrolling jika konten terlalu besar */
+    background-color: rgba(0,0,0,0.7); /* Latar belakang gelap (backdrop) */
+}
+
+/* Kotak Konten Modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% dari atas dan ditengah secara horizontal */
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 400px; /* Batasi lebar */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative; /* Penting untuk tombol close */
+}
+
+/* Tombol Tutup (x) */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Gaya tambahan untuk input di dalam modal */
+.modal-content input[type="email"],
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
