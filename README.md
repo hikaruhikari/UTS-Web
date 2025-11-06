@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Screenshot (343)" src="https://github.com/user-attachments/assets/9e9af460-c616-4937-bf48-17a04de5a667" /># UTS-Web
+# UTS-Web
 
 Berdasarkan Tugas yang diberikan saya akan membagi menjadi 7 bagian dalam penjelasan disini:
 
@@ -197,6 +197,22 @@ halaman ini hanya menampilkan riwayat pemesana sebelumnya, kode yang dibuat juga
 
 pada file history.js, data yang sebelumnya tercatat dalam riwayat pemesana akan ditampilkan di web dengan bantuan kode js ini
 
+<img width="1920" height="1080" alt="Screenshot (375)" src="https://github.com/user-attachments/assets/999b5e5e-e30b-4357-995b-afa817d771e9" />
+<img width="1920" height="1080" alt="Screenshot (376)" src="https://github.com/user-attachments/assets/b997c549-c065-498a-b4fa-e0b646d303a9" />
+<img width="1920" height="1080" alt="Screenshot (377)" src="https://github.com/user-attachments/assets/cefffc70-07cb-4136-ba7c-705e8a307b3b" />
+
+tampilan history
+
+<img width="1920" height="1080" alt="Screenshot (378)" src="https://github.com/user-attachments/assets/84272908-6e54-4678-bd8c-28c2bf2c4b8a" />
+
+popup detail
+
+<img width="1920" height="1080" alt="Screenshot (379)" src="https://github.com/user-attachments/assets/e3a9019d-d951-4047-a752-1db32131da51" />
 
 7. about.html
 
+disini hanya menggunakan kode sederhana dengan tampilan sederhana
+
+<img width="1920" height="1080" alt="Screenshot (380)" src="https://github.com/user-attachments/assets/1ad7f82e-9021-4eee-b7eb-3b8c8fe02cc8" />
+
+berikut penjelasan yang bisa saya berikan, terima kasih
